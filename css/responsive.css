@@ -1,0 +1,161 @@
+/* ========================================
+   MOBILE / TABLET
+   Loaded last so these rules override
+   everything above them.
+======================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* --- Sidebar becomes a bottom bar --- */
+
+    .sidebar {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        padding: 6px 10px;
+        border-right: none;
+        border-top: 1px solid #dbdbdb;
+        z-index: 1000;
+    }
+
+    .sidebar .logo {
+        display: none;
+    }
+
+    .nav-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+
+    .nav-item {
+        padding: 5px;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 10px;
+    }
+
+    .nav-item span:first-child {
+        font-size: 20px;
+    }
+
+    /* --- Home / feed --- */
+
+    .main-content {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px 10px 80px;
+    }
+
+    .stories-section {
+        width: 100%;
+        gap: 14px;
+    }
+
+    .story {
+        min-width: 60px;
+    }
+
+    .story-avatar {
+        width: 55px;
+        height: 55px;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    .post-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    /* --- Explore --- */
+
+    .explore-content {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        padding: 20px 10px 80px;
+    }
+
+    .explore-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .explore-header input {
+        width: 100%;
+    }
+
+    .explore-grid {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+    }
+
+    /* --- Profile --- */
+
+    .profile-content {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        padding: 25px 15px 80px;
+    }
+
+    .profile-header {
+        gap: 20px;
+    }
+
+    .profile-header .profile-picture {
+        width: 90px;
+        height: 90px;
+        font-size: 28px;
+    }
+
+    .profile-top {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .profile-stats {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .profile-tabs {
+        gap: 25px;
+    }
+
+    .profile-grid {
+        width: 100%;
+    }
+
+    /* --- Auth --- */
+
+    .login-box,
+    .signup-box {
+        width: 100%;
+        max-width: 350px;
+    }
+}
