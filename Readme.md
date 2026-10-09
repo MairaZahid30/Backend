@@ -28,3 +28,16 @@ postgresql=>create=>database=>crud_db=>schema=>public=>tables
 install pg package in terminal
 db.js=>code of module, first const is important.......... note: CLI -> command line good practice for developers otherwise local  
 import pool in app.js ............. run command npm run start
+
+
+tables in db
+sara work code k undr hona chahiye
+python for automation and scripts of python for ai tools creation
+postman => download page=>signin => maira's workspace(online)
+postman=> exe file open => workspace will appear
+__ local link => select field post => click body and raw json => write api to test by sending
+__ local link with id => select delete => then send
+__ local link with id => select patch => in body write the var which you want to change => send
+__ local link 
+
+post dena, get lene, delete remove, patch update 
